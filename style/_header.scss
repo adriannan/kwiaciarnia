@@ -1,4 +1,9 @@
 header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    min-height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,18 +12,20 @@ header{
 .header__logo{
     text-transform: capitalize;
     color: $cl-yel;
+    padding-left: 4vw;
 }
 
 .header__nav{
     list-style-type: none;
     display: flex;
+    padding-right: 4vw;
 }
 
 .nav__item{
     text-decoration: none;
     text-transform: uppercase;
     color: $cl-yel;
-    padding: 1em;
+    padding-left: 1em;
 }
 
 .nav__item:hover{

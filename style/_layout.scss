@@ -1,0 +1,30 @@
+body{
+    background-color: $cl-bur;
+}
+.container{
+    width: 92vw;
+    margin: 0 auto;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.hero{
+    @extend .container;
+    justify-content: center;
+    height: 85vh;
+}
+
+.offer{
+    @extend .container;
+    justify-content: space-between;
+}
+
+.contact{
+    @extend .container;
+}
+
+.map{
+    @extend .container;
+}
+

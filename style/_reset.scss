@@ -22,7 +22,7 @@ blockquote, q { quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 table { border-collapse: collapse; border-spacing: 0; }
 /*self clearfixing*/
-section:before, section:after, article:before, article:after {clear: both; content: ""; display: table;}
+// section:before, section:after, article:before, article:after {clear: both; content: ""; display: table;}
 /* new clearfix */
 .clearfix:after {
     visibility: hidden;
