@@ -350,7 +350,8 @@ template {
   display: none; }
 
 body {
-  background-color: #291d21; }
+  background-color: #38151f;
+  font-family: "lato", sans-serif; }
 
 .container, .hero, .offer, .contact, .map {
   width: 92vw;
@@ -375,7 +376,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #291d21; }
+  background-color: #38151f; }
 
 .header__logo {
   text-transform: capitalize;
@@ -421,7 +422,7 @@ header {
   margin: 2em; }
 
 .hero__button {
-  color: #291d21;
+  color: #38151f;
   background-color: #fdc132;
   border: none;
   padding: .8em 2em;
@@ -436,7 +437,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  color: #291d21; }
+  color: #38151f; }
 
 .offer__img {
   font-size: 3em;
@@ -459,10 +460,11 @@ header {
   height: 300px;
   background-color: #fda745;
   justify-content: space-around;
-  color: #291d21; }
+  color: #38151f; }
 
 .contact__item {
   height: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
@@ -470,11 +472,15 @@ header {
 .contact__title {
   text-transform: uppercase;
   margin: 1em;
-  text-align: center; }
+  text-align: center;
+  font-weight: bold; }
 
 .contact__detail {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  border-right: solid 1px #38151f;
+  height: 3em;
+  justify-content: center; }
 
 .contact__icon {
   font-size: 1.4em;
@@ -484,10 +490,14 @@ header {
 
 .contact__link {
   text-decoration: none;
-  color: #291d21;
+  color: #38151f;
   line-height: 1em; }
 
 .contact__hours {
   text-align: center; }
+
+.contact__hours span {
+  font-weight: bold;
+  margin-right: .6em; }
 
 /*# sourceMappingURL=style.css.map */
