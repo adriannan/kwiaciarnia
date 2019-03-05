@@ -2,6 +2,9 @@ body{
     background-color: $cl-bur;
     font-family: $lato;
 }
+*:focus {
+    outline: none;
+}
 .container{
     width: 92vw;
     margin: 0 auto;

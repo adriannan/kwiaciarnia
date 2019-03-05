@@ -43,13 +43,43 @@
 }
 .hero__button{
     color: $cl-bur;
+    text-transform: uppercase;
     background-color: $cl-yel;
     border: none;
     padding: .8em 2em;
+    // padding: .8em 4em;
     transform: translateY(1.3em);
+    transition: 0.2s ease-out;
     // z-index: 1;
     // margin-top: 2em;
     // border-radius: .1em;
+}
+
+
+.hero__button::after{
+    position: absolute;
+    content: "";
+    height: .4em;
+    width: .4em;
+    margin: .3em 0 0 .6em;
+    padding: .1em;
+    border: solid $cl-bur;
+    border-width: 0 1px 1px 0;
+    transform: rotate(-45deg);
+    transition: 0.2s ease-out;
+    display: none;
+}
+.hero__button:hover:after{
+    display: inline-block;
+    transition: 0.2s ease-out;
+}
+.hero__button:hover{
+    cursor: pointer;
+    filter: brightness(1.1);
+    // background-color: $cl-bur;
+    // color: $cl-yel;
+    transition: 0.2s ease-out;
+    padding: .8em 3em .8em 2.2em;
 }
 
 .offer__item{
