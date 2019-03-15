@@ -85,7 +85,6 @@
 .offer__item{
     min-height: 350px;
     background-color: $cl-gol;
-    // background-color: #fff;
     width: 28vw;
     display: flex;
     flex-direction: column;
@@ -93,7 +92,6 @@
     align-items: center;
     text-align: center;
     color: $cl-bur;
-
 }
 
 .offer__img{
@@ -109,9 +107,20 @@
 .offer__text{
     padding: 1em;
     min-height: 3em;
-
 }
-
+.about__content{
+    background-color: $cl-gol;
+    text-align: center;
+    padding: 2em;
+}
+.about__title{
+    font-size: 2em;
+    padding: 1em;
+}
+.about__text{
+    padding: 1.4em;
+    line-height: 1.4em;
+}
 .map {
     height: 350px;
     // color: #242f3e;
@@ -163,4 +172,73 @@
 .contact__hours span{
     font-weight: bold;
     margin-right: .6em;
+}
+.footer{
+    background-color: $cl-red;
+}
+
+.footer__copyright{
+    color: $cl-bur;
+    font-size: .8em;
+}
+
+.gallery__box{
+    width: 30vw;
+    height: 30vw;
+    background-color: $cl-yel;
+    margin: 2em;
+}
+
+.gallery__item{
+    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    overflow: hidden;
+    height: 100%;
+    object-position: center;
+}
+
+.gallery__img{
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+    object-position: center;
+    filter: grayscale(100%) brightness(80%);
+	// z-index: -1;
+    // transition: .2s linear;
+}
+
+.gallery__item::after{
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $cl-red;
+	opacity: .3;
+	transition: .2s linear;
+}
+
+.gallery__item:hover::after{
+    opacity: 0;
+    transition: .2s linear;
+}
+.gallery__item:hover .gallery__img{
+    transition: .2s linear;
+    filter: none;
+}
+.gallery__item:hover .gallery__title{
+    color: #fff;
+}
+.gallery__title{
+    font-size: 1.4em;
+
+    text-shadow: .1em .1em .2em $cl-bur;
+    position: absolute;
+	bottom: 20%;
+	color: $cl-yel;
+    text-transform: uppercase;
+    text-align: center;
 }

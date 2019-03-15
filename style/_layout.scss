@@ -1,12 +1,20 @@
+html{
+    height: 100%;
+    // height: 90%;
+
+}
 body{
     background-color: $cl-bur;
     font-family: $lato;
+    min-height: 100%;
+    position: relative;
+
 }
 *:focus {
     outline: none;
 }
 .container{
-    width: 92vw;
+    width: 90%;
     margin: 0 auto;
     margin-top: 75px;
     display: flex;
@@ -23,6 +31,9 @@ body{
     @extend .container;
     justify-content: space-between;
 }
+.about{
+    @extend .container;
+}
 
 .contact{
     @extend .container;
@@ -32,3 +43,21 @@ body{
     @extend .container;
 }
 
+.footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2.6em;
+    bottom: -6em;
+    justify-content: center;
+    position: absolute;
+}
+
+.gallery{
+    @extend .container;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    width: 100%;
+    overflow-x: hidden;
+}

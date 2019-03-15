@@ -10,8 +10,9 @@ header{
     background-color: $cl-bur;
 }
 .header__logo{
-    text-transform: capitalize;
     color: $cl-yel;
+    text-transform: capitalize;
+    text-decoration: none;   
     padding-left: 4vw;
 }
 
