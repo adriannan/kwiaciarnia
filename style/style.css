@@ -624,4 +624,31 @@ header {
   text-transform: uppercase;
   text-align: center; }
 
+.gallery__main-title {
+  font-size: 1.8em;
+  color: #38151f;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: .6em;
+  background-color: #fda745; }
+
+.gallery__photo-box {
+  max-height: 20vw;
+  max-width: 20vw;
+  margin: 1em;
+  overflow: hidden; }
+
+.gallery__photo:hover {
+  transform: scale(1.1);
+  transition: .2s linear; }
+
+.gallery__photo {
+  height: 20vw;
+  width: 20vw;
+  object-fit: cover;
+  object-position: center;
+  transition: .2s linear; }
+
 /*# sourceMappingURL=style.css.map */
