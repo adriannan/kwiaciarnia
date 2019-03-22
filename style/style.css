@@ -389,6 +389,7 @@ body {
   flex-wrap: wrap;
   min-height: 50vh;
   width: 100%;
+  max-width: 1000px;
   overflow-x: hidden; }
 
 header {
@@ -573,7 +574,9 @@ header {
 
 .gallery__box {
   width: 30vw;
+  max-width: 400px;
   height: 30vw;
+  max-height: 400px;
   background-color: #fdc132;
   margin: 2em; }
 
