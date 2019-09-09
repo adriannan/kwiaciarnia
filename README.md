@@ -27,8 +27,7 @@ This is a flower shop website created by myself.
 
 ### Used..
 - Lightbox Gallery by Lokesh Dhakar
-
-
+- AOS (Animate on scroll) by Michał Sajnóg
 
 
 
